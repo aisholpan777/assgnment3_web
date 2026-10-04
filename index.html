@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Web Design - Assignment 3</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">DevStudio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#custom-services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="hero" class="py-5 bg-light mt-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-6 order-1 order-md-1 mb-4 mb-md-0">
+          <h1 class="display-4 fw-bold">Modern Web Solutions</h1>
+          <p class="lead">We build responsive, high-performance websites for all screen sizes.</p>
+          <p class="text-muted d-none d-md-block">This additional description is visible only on tablets and desktop screens.</p>
+          <a href="#about" class="btn btn-primary btn-lg">Learn More</a>
+        </div>
+        <div class="col-12 col-md-6 order-2 order-md-2 text-center">
+          <img src="img/hero.jpg" class="img-fluid rounded shadow" alt="Hero Image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">About Us</h2>
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <div class="p-3 border rounded text-center bg-white shadow-sm">
+            <h3>Quality</h3>
+            <p>We deliver clean code and scalable architecture for modern applications.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="p-3 border rounded text-center bg-white shadow-sm">
+            <h3>Performance</h3>
+            <p>Fast loading speed and seamless user experience across all devices.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="p-3 border rounded text-center bg-white shadow-sm">
+            <h3>Support</h3>
+            <p>Dedicated technical support and continuous development services.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="custom-services" class="manual-section">
+    <div class="manual-container">
+      <h2 class="manual-title">Our Services</h2>
+      <div class="manual-grid">
+        <div class="manual-card">
+          <h3>Web Development</h3>
+          <p>Custom websites tailored to your business needs.</p>
+        </div>
+        <div class="manual-card">
+          <h3>UI/UX Design</h3>
+          <p>Intuitive user interfaces and engaging experiences.</p>
+        </div>
+        <div class="manual-card">
+          <h3>SEO Optimization</h3>
+          <p>Boosting visibility and search engine rankings.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Portfolio</h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/project1.jpg" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">E-Commerce Platform</h5>
+              <p class="card-text">Fully responsive online store with payment integration.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/project2.jpg" class="card-img-top" alt="Project 2">
+            <div class="card-body">
+              <h5 class="card-title">Corporate Portal</h5>
+              <p class="card-text">Internal enterprise system for team collaboration.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/project3.jpg" class="card-img-top" alt="Project 3">
+            <div class="card-body">
+              <h5 class="card-title">Mobile Web Application</h5>
+              <p class="card-text">Cross-platform web app with real-time updates.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+              Is this layout built mobile-first?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Yes, the base layout targets mobile screens first and adapts to larger displays via media queries.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+              How are custom styles integrated with Bootstrap?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Custom CSS is linked after Bootstrap CSS to ensure rule overrides work as expected.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2026 Student Name. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
